@@ -1,0 +1,24 @@
+# Ignorar la carpeta de dependencias de Node.js
+node_modules/
+
+# Ignorar archivos de log
+*.log
+
+# Archivos de configuración específicos de macOS
+.DS_Store
+
+# Archivos de miniaturas de Windows
+Thumbs.db
+
+# Ignorar archivos de entorno
+*.env*
+
+# Archivos generados por IDEs y editores de texto
+.vscode/
+.idea/
+
+# Ignorar archivos temporales de editores como Vim o Emacs
+*.swp
+
+
+env.bat
