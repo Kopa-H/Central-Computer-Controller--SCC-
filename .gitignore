@@ -1,24 +1,21 @@
-# Ignorar la carpeta de dependencias de Node.js
-node_modules/
+# Ignorar archivos de entorno y variables sensibles
+.env
+.env.*
+.env.bat
 
-# Ignorar archivos de log
-*.log
+# Ignorar carpeta del entorno virtual (ajusta el nombre si es diferente)
+.myenv/
+myenv/
+venv/
 
-# Archivos de configuración específicos de macOS
-.DS_Store
+# Ignorar archivos Python compilados y cachés
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Archivos de miniaturas de Windows
-Thumbs.db
-
-# Ignorar archivos de entorno
-*.env*
-
-# Archivos generados por IDEs y editores de texto
+# Ignorar configuración local del editor
 .vscode/
-.idea/
 
-# Ignorar archivos temporales de editores como Vim o Emacs
-*.swp
-
-
-env.bat
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
