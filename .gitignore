@@ -1,12 +1,11 @@
 # Ignorar archivos de entorno y variables sensibles
 .env
 .env.*
-.env.bat
+env.bat
 
 # Ignorar carpeta del entorno virtual (ajusta el nombre si es diferente)
 .myenv/
 myenv/
-venv/
 
 # Ignorar archivos Python compilados y cachés
 __pycache__/

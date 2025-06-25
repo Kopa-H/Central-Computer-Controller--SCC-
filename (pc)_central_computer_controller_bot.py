@@ -1,8 +1,8 @@
 import os
 import subprocess
 import tkinter as tk
-from telegram import Update # type: ignore
-from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext # type: ignore
+from telegram import Update
+from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext
 from dotenv import load_dotenv
 
 # Cargar las variables de entorno desde .env
@@ -101,6 +101,7 @@ class TelegramBot:
 
         # Añadir un manejador para los mensajes no reconocidos
         self.application.add_handler(MessageHandler(filters.Regex('^.*'), self.unknown_command))
+
     async def start(self, update: Update, context: CallbackContext) -> None:
         await update.message.reply_text("¡Hola! Soy un bot destinado a hacer uso del Computador Principal de Kopa a modo de servidor. Usa /info para ver los comandos disponibles.")
 

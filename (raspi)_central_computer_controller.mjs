@@ -34,7 +34,7 @@ function pingPC(ip) {
 async function startPC() {
     try {
         await axios.get(esp8266Ip);  // Enviar una solicitud HTTP GET al ESP8266
-        return "El Computador Principal se está encendiendo correctamente. Todos los serviores estarán a su servicio en unos segundos. No olvide usar /shutdown al abandonar la sesión.";
+        return "El Computador Principal se está encendiendo correctamente. No olvide usar /shutdown al abandonar la sesión.";
     } catch (error) {
         return "Error al intentar iniciar el Computador Principal, el control del ESP8266 ha fallado. Contacte con Kopa para obtener asistencia.";
     }
